@@ -6,7 +6,7 @@
 
 **An oversight gateway for one-person companies.** Every email, quote, payment, upload, delete and post an AI agent wants to make is checked against the owner's written rules and the files the agent actually read, then **allowed**, **held for the owner**, or **blocked** before it happens.
 
-[Live app](https://jpbfucnh.qwenwork.page/) · [Website](https://clientshield.geo.hashmeta.tech) · Demo video (link added at submission)
+[Live app](https://jpbfucnh.qwenwork.page/) · [Website](https://clientshield.geo.hashmeta.tech) · [Demo video](https://youtu.be/o54kqWgLOkU)
 
 ![Scenarios](https://img.shields.io/badge/scenarios-48%2F48-34d399) ![Red team](https://img.shields.io/badge/red%20team-12%2F12-34d399) ![False positives](https://img.shields.io/badge/false%20positives-0-34d399) ![Built with QwenWork](https://img.shields.io/badge/built%20with-QwenWork-0f1a2e) ![License](https://img.shields.io/badge/license-MIT-blue)
 
@@ -16,6 +16,7 @@
 
 ## Contents
 
+- [Demo video](#demo-video)
 - [Hackathon](#hackathon)
 - [The problem](#the-problem)
 - [This has already happened](#this-has-already-happened)
@@ -32,6 +33,22 @@
 - [Known limits](#known-limits)
 - [Data and privacy](#data-and-privacy)
 - [Author](#author)
+
+---
+
+## Demo video
+
+**[Watch the 3-minute demo on YouTube](https://youtu.be/o54kqWgLOkU)**
+
+The video was generated with QwenWork: screen recordings of the live app and website, an animated architecture walkthrough, and title and end cards. The narration is in the subtitles, so please turn on **CC**. English and Simplified Chinese (简体中文) tracks are available.
+
+| | |
+|---|---|
+| 0:00 | Mei and Lumen Studio: why a one-person company needs a second pair of eyes |
+| 0:17 | How it works: one quote followed through the gateway to BLOCK |
+| 0:36 | Live run, made-up numbers, prompt injection, a real QwenWork agent, approvals and tests |
+| 1:52 | Pricing and how it is built |
+| 2:05 | The 7am morning briefing |
 
 ---
 
@@ -170,6 +187,7 @@ All numbers come from the live app (Scenarios page), running through the real ga
 | **Scheduled task** | Writes the owner's morning briefing every day at 07:00 (Asia/Singapore). See [`docs/briefing-task.md`](docs/briefing-task.md). |
 | **Skill** | `clientshield-guard` makes any QwenWork agent check with the gateway before a risky action and fail closed. See [`docs/skill-clientshield-guard/`](docs/skill-clientshield-guard/). |
 | **Real agent runs** | QwenWork agents call the same gateway; their log rows are tagged "via QwenWork skill". |
+| **Demo video** | Generated with QwenWork: recordings, animated architecture, title and end cards, English and Simplified Chinese subtitles. |
 
 The marketing website is built with **Hashmeta AI**: [clientshield.geo.hashmeta.tech](https://clientshield.geo.hashmeta.tech).
 
